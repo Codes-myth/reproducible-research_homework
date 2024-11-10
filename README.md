@@ -1,6 +1,7 @@
 # Reproducible research: version control and R
 
-\# INSERT ANSWERS HERE #
+\# Link to logistic_growth repository
+https://github.com/Felix-Smyth/logistic_growth #
 
 ## Instructions
 
