@@ -1,9 +1,26 @@
 # Reproducible research: version control and R
 
+# Answers # 
 \# Link to logistic_growth repository
 https://github.com/Felix-Smyth/logistic_growth #
 
-## Instructions
+## Question 4 ##
+### a) What is observed after the random walk code execution? ###
+The two plots produced from the code show two stochastic paths undertaken, both from the same function but ran twice. The plots each show a pathway for a particle on a two dimensional plane denoted by x ordinates and y ordinates respectively. The starting position of the particle is denoted by the coordinates(0,0), allowing any deviations from this position at any point in time to be found using the coordinates of the x and y axis. 
+
+The notation of the x and y axis are relative to the starting position of the particle, which is maintained as (0,0). Wherever the random path traces to, determines the minimum and maximum coordinates of each of the axes. 
+
+Along the length of the path line taken by each plot, the colour of the line experiences a colour gradient change from dark blue to light blue. This change is proportional to the amount of time elapsed since the random walk began and also the length of the line, as the particle has a constant speed. As a result, the colour of the line at any point can be compared to the legend gradient to estimate at which point in time the random walk crossed a specific coordinate. Both random walks finish at a time of 500 units. 
+
+Each of the particles in the two plots move a distance 0.25 on the coordinate scale per unit time. The randomised component of the model is the angle in which this occurs at any specified time interval. This explains why the plots are different for each successive running of the model as it would be probabalistically extremely unlikely that a perfect replica path was generated. 
+
+### b) What is a random seed and how does it work? ###
+A random seed is the starting input of the generation of a random number series. 
+
+
+
+# Assignment #
+## Instructions ##
 
 The homework for this Computer skills practical is divided into 5 questions for a total of 100 points. First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.
 
