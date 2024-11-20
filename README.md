@@ -17,7 +17,11 @@ Every step of the random walk motion is made of a straight line as seen below. E
 ![Random walk Plots:](randomwalkplots.png)
 
 ### b) What is a random seed and how does it work? ###
-A random seed is the starting input of the generation of a random number series by a computer. As a true random number cannot be generated, pseudo-randomisation can be done instead using algorithms. 
+A random seed is the starting input of the generation of a random number by a computer. As a true random number cannot be generated, pseudo-randomisation can be done instead using algorithms. A random seed is a number used to begin this process of pseudo-randomisation and acts as the deterministic part of the generation process. The same random seed, when put into a random number generator, will produce the same number output each time. However, which random number is generated is for each seed is much harder to predict and requires knowledge of the algorithm steps that the computer uses to produce a pseudo-random number as an output. 
+
+The fact that a seed produces the same random number output each time when ran means that knowledge of the random seed used in an experiment or model allows for replicable results. With knowledge of the random seed used and the pseudo-random algorithm, other individuals running a length of code can completely replicate the choices and data of the original author. 
+
+A very simplistic random number generator model for understanding (major oversimplification) is the idea of a sine wave function that has been compressed almost infinitely on the x axis scale while the Y axis scale lies between 0 and 1. For a specific random seed (a number somewhere along the x axis) the function produces the same pseudo random probability value between 0 and 1 for each repetition. However different values along the x axis produce very different y values in an almost random fashion. 
 
 
 
