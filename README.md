@@ -14,6 +14,8 @@ Along the length of the path line taken by each plot, the colour of the line exp
 
 Each of the particles in the two plots move a distance 0.25 on the coordinate scale per unit time. The randomised component of the model is the angle in which this occurs at any specified time interval. This explains why the plots are different for each successive running of the model as it would be probabalistically extremely unlikely that a perfect replica path was generated. 
 
+![Random walk Plots:](randomwalkplots.png)
+
 ### b) What is a random seed and how does it work? ###
 A random seed is the starting input of the generation of a random number series. 
 
