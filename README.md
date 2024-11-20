@@ -40,6 +40,10 @@ Commit history of the reproducible random walk file in order to make it reproduc
 ![image](https://github.com/user-attachments/assets/94b3ca5e-e60b-4f57-ad1f-576fb7a5e375)
 
 
+## Question 5 ##
+### a) How many rows and columns does the Cui_etal2014.csv have? ###
+Excluding the column name row, the data has 33 rows and 13 columns. 
+
 
 # Assignment #
 ## Instructions ##
