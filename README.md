@@ -12,12 +12,12 @@ The notation of the x and y axis are relative to the starting position of the pa
 
 Along the length of the path line taken by each plot, the colour of the line experiences a colour gradient change from dark blue to light blue. This change is proportional to the amount of time elapsed since the random walk began and also the length of the line, as the particle has a constant speed. As a result, the colour of the line at any point can be compared to the legend gradient to estimate at which point in time the random walk crossed a specific coordinate. Both random walks finish at a time of 500 units. 
 
-Each of the particles in the two plots move a distance 0.25 on the coordinate scale per unit time. The randomised component of the model is the angle in which this occurs at any specified time interval. This explains why the plots are different for each successive running of the model as it would be probabalistically extremely unlikely that a perfect replica path was generated. 
+Every step of the random walk motion is made of a straight line as seen below. Each of the particles in the two plots move a distance 0.25 on the coordinate scale per unit time. The randomised component of the model is the angle in which this occurs at any specified time interval. This explains why the plots are different for each successive running of the model as it would be probabalistically extremely unlikely that a perfect replica path was generated. 
 
 ![Random walk Plots:](randomwalkplots.png)
 
 ### b) What is a random seed and how does it work? ###
-A random seed is the starting input of the generation of a random number series. 
+A random seed is the starting input of the generation of a random number series by a computer. As a true random number cannot be generated, pseudo-randomisation can be done instead using algorithms. 
 
 
 
