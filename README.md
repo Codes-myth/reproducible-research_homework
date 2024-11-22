@@ -44,6 +44,32 @@ Commit history of the reproducible random walk file in order to make it reproduc
 ### a) How many rows and columns does the Cui_etal2014.csv have? ###
 Excluding the column name row, the data has 33 rows and 13 columns. 
 
+### b) What transformation can you use to fit a linear model to the data? ###
+A log tranformation can be used to fit a linear model to the data of the realtionship between genome length and virion volume. 
+
+### c) Find the exponent (β) and scaling factor (α) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in Table 2 of the paper, did you find the same values? ###
+
+
+![image](https://github.com/user-attachments/assets/630edbfa-92fc-4c27-9601-6204b68fb0aa)
+
+Exponent (β) has a value of 1.5152 with a p value of 6.44 x10^(-10)
+
+Scaling factor (α) has a value of 1181.807 with a p value of 2.28 x10^ (-10)
+
+Both values are very statistically significant and the value of both the scaling factor and exponent match that of Table 2 of the paper. 
+
+
+### d) Write the code to reproduce the figure ### 
+Code can be found in the virion_sizes.R file but attached below is a copy of the plot. 
+
+
+### e) Calculate the estimated volume of a viral particle with a genome length of 300kb ###
+Use of the provided equation and the estimated values of the exponent and scaling factor from the linear model
+
+Volume of virion calculated to be 6697006 or 6.70 x10^6 (3sf) 
+
+This value looks to be in the right region, judging from the graph at the bottom of the README.md file
+
 
 # Assignment #
 ## Instructions ##
