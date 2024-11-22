@@ -60,7 +60,8 @@ Both values are very statistically significant and the value of both the scaling
 
 
 ### d) Write the code to reproduce the figure ### 
-Code can be found in the virion_sizes.R file but attached below is a copy of the plot. 
+Code can be found in the virion_sizes.R file but attached below is a copy of the plot just for reference.
+![image](genome_volume_plot.png)
 
 
 ### e) Calculate the estimated volume of a viral particle with a genome length of 300kb ###
