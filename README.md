@@ -1,8 +1,85 @@
 # Reproducible research: version control and R
 
-\# INSERT ANSWERS HERE #
+# Answers # 
+For Answers 1-3:
 
-## Instructions
+\# Link to logistic_growth repository https://github.com/Codes-myth/logistic_growth/tree/main #
+
+## Question 4 ##
+### a) What is observed after the random walk code execution? ###
+The two plots produced from the code show two stochastic paths undertaken, both from the same function but ran twice. The plots each show a pathway for a particle on a two dimensional plane denoted by x ordinates and y ordinates respectively. The starting position of the particle is denoted by the coordinates(0,0), allowing any deviations from this position at any point in time to be found using the coordinates of the x and y axis. 
+
+The notation of the x and y axis are relative to the starting position of the particle, which is maintained as (0,0). Wherever the random path traces to, determines the minimum and maximum coordinates of each of the axes. 
+
+Along the length of the path line taken by each plot, the colour of the line experiences a colour gradient change from dark blue to light blue. This change is proportional to the amount of time elapsed since the random walk began and also the length of the line, as the particle has a constant speed. As a result, the colour of the line at any point can be compared to the legend gradient to estimate at which point in time the random walk crossed a specific coordinate. Both random walks finish at a time of 500 units. 
+
+Every step of the random walk motion is made of a straight line as seen below. Each of the particles in the two plots move a distance 0.25 on the coordinate scale per unit time. The randomised component of the model is the angle in which this occurs at any specified time interval. With multiple intervals a random path of particle motion is built up in the model. This phenomena explains why the plots are different for each successive running of the model, as it would be probabalistically extremely unlikely that a perfect replica path was generated for all 500 repetitions.  
+
+An image of the plots can be seen below for reference.
+![Random walk Plots:](randomwalkplots.png)
+
+Data and code have since been edited in order to complete the next steps of this Assignment
+
+### b) What is a random seed and how does it work? ###
+A random seed is the starting input of the generation of a random number by a computer. As a true random number cannot be generated, pseudo-randomisation can be done instead using complex computer algorithms. A random seed is a number used to begin this process of pseudo-randomisation and acts as the deterministic part of the generation process. When put into a random number generator, this value will produce the same number output each time. However, which random number is generated is for each seed is much harder to predict and requires knowledge of the algorithm steps that the computer uses to produce a pseudo-random number as an output. 
+
+The fact that a seed produces the same random number output each time when run means that knowledge of the random seed used in an experiment or model allows for replicable results. With knowledge of the random seed used and the pseudo-random algorithm, other individuals running a length of code can completely replicate the choices and data of the original author. 
+
+A very simplistic random number generator model for understanding (major oversimplification) is the idea of a sine wave function that has been compressed almost infinitely on the x axis scale while the Y axis scale lies between 0 and 1. For a specific random seed (a number somewhere along the x axis) the function produces a very close value to of pseudo random probability between 0 and 1. This number is the same for for each repetition using the same seed. However different values along the x axis produce very different y values in an almost random fashion. This model is only used for understanding.
+
+### c) Reproduceable Brownian motion ###
+Edit the script to make a reproducible simulation of Brownian motion. Commit the file and push it to your forked reproducible-research_homework repo
+
+Assuming that Brownian motion still occurs in the 2D plane specified already in the code and not in a 3D space. Brownian motion describes random particle movement in space over time which can be modelled as a random walk. Particles are not able to teleport. Incorporation of a random seed alows the reproducible identification of the specific output of the random walk generator. 
+
+Script is found in the question-4-code file of this repository.
+
+### d) Showing commit history ###
+This commit history is for the dev branch of the forked repository as I will commit and push to the main branch when everything is complete. 
+
+Commit history of the reproducible random walk file in order to make it reproducible with the addition of a random seed
+
+![image](https://github.com/user-attachments/assets/d6b52d6b-a4b1-46fd-94ea-996d886c4d90)
+
+![image](https://github.com/user-attachments/assets/94b3ca5e-e60b-4f57-ad1f-576fb7a5e375)
+
+
+## Question 5 ##
+### a) How many rows and columns does the Cui_etal2014.csv have? ###
+Excluding the column name row, the data has 33 rows and 13 columns. 
+
+### b) What transformation can you use to fit a linear model to the data? ###
+A log tranformation can be used to fit a linear model to the data of the realtionship between genome length and virion volume. 
+
+### c) Find the exponent (β) and scaling factor (α) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in Table 2 of the paper, did you find the same values? ###
+
+Summary table from the model analyses
+
+
+![image](https://github.com/user-attachments/assets/630edbfa-92fc-4c27-9601-6204b68fb0aa)
+
+Exponent (β) has a value of 1.5152 with a p value of 6.44 x10^(-10)
+
+Scaling factor (α) has a value of 1181.807 with a p value of 2.28 x10^ (-10)
+
+Both values are very statistically significant and the value of both the scaling factor and exponent match that of Table 2 of the paper. 
+
+
+### d) Write the code to reproduce the figure ### 
+Code can be found in the virion_sizes.R file but attached below is a copy of the plot just for reference.
+![image](genome_volume_plot.png)
+
+
+### e) Calculate the estimated volume of a viral particle with a genome length of 300kb ###
+Use of the provided equation and the estimated values of the exponent and scaling factor from the linear model
+
+Volume of virion calculated to be 6697006 or 6.70 x10^6 (3sf) 
+
+This value looks to be in the right region, judging from the graph at the bottom of the README.md file
+
+
+# Assignment #
+## Instructions ##
 
 The homework for this Computer skills practical is divided into 5 questions for a total of 100 points. First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.
 
