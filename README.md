@@ -2,7 +2,7 @@
 
 # Answers # 
 \# Link to logistic_growth repository
-https://github.com/Felix-Smyth/logistic_growth #
+ #
 
 ## Question 4 ##
 ### a) What is observed after the random walk code execution? ###
@@ -48,6 +48,8 @@ Excluding the column name row, the data has 33 rows and 13 columns.
 A log tranformation can be used to fit a linear model to the data of the realtionship between genome length and virion volume. 
 
 ### c) Find the exponent (β) and scaling factor (α) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in Table 2 of the paper, did you find the same values? ###
+
+Summary table from the model analyses
 
 
 ![image](https://github.com/user-attachments/assets/630edbfa-92fc-4c27-9601-6204b68fb0aa)
